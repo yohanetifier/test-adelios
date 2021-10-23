@@ -44,28 +44,28 @@ for (let i= 0; i < div.length; i++){
   
   if (i < 3){
     gsap.from(`#${nameId[i]} > div > div`, {opacity: 0, autoAlpha: 0, ease:Back.easeOut, stagger:{
-    each: 0.04,
+    each: 0.05,
     from: "center"
 }}, i === 0 ? null : i + 0.11)
   }
   
   if (i === 3){
     gsap.from(`#${nameId[i]} > div > div`, {opacity: 0, autoAlpha: 0, ease:Back.easeOut, stagger:{
-  each: 0.04,
+  each: 0.05,
   from: "end"
 }},i / 1.30)
   }
   
   if (i > 3 && i < 7){
     gsap.from(`#${nameId[i]} > div > div`, {opacity: 0, autoAlpha: 0, ease:Back.easeOut, stagger:{
-  each: 0.04,
+  each: 0.05,
   from: "center"
 }}, i / 1.4)
   }
   
   if( i >= 7){
     gsap.from(`#${nameId[i]} > div > div`, {opacity: 0, autoAlpha: 0, ease:Back.easeOut, stagger:{
-  each: 0.04,
+  each: 0.05,
 }}, i / 1.4)
   }
 }
